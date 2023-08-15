@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <div class="count">
+            <h1>Character Count</h1>
+            <input id="input" type="text" placeholder="Enter a word">
+            <p id="text">0</p>
+        </div>
+
+    </section>
+
+    <script>
+        var x = document.getElementById("input");
+        var y = document.getElementById("text");
+        
+    x.addEventListener("keyup", function(){
+    var l=0;
+    var val=x.value;
+       for(var i=0;i<val.length;i++){
+         l++;
+         
+        } 
+        y.innerHTML=l;
+  
+    });
+
+    </script>
+
+</body>
+    
+
+
+ 
